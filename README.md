@@ -15,7 +15,8 @@
 
 ### STEP 6: Check the accuracy score and make amendments if required.
 ## PROGRAM:
-
+python
+```
 import numpy as np
 from tensorflow import keras
 from tensorflow.keras import layers
@@ -71,7 +72,7 @@ metrics[['loss','val_loss']].plot()
 x_test_predictions = np.argmax(model.predict(X_test_scaled), axis=1)
 print(metrics['accuracy'])
 print(confusion_matrix(y_test,x_test_predictions))
-
+```
 ## OUTPUT:
 ### Model summary:
 ![image](https://github.com/gpavithra673/Workshop-2-Developing-CNN-Model-for-CIFAR-10-Dataset/assets/93427264/35e79522-976d-406c-9dc3-3e97a2d7b899)
